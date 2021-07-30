@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import { ConfigProvider } from 'antd';
-import { Router, Route, Link } from 'react-router'
+import Router from './router';
+// import { Router, Route, Link } from 'react-router'
 
 
 import zhCN from 'antd/lib/locale/zh_CN';
@@ -17,7 +18,8 @@ ReactDOM.render(
   <ConfigProvider locale={zhCN}>
     <React.StrictMode>
     {/* <Router routes={routes} > */}
-      <App />
+      <Router />
+      {/* <App /> */}
     {/* </Router> */}
     </React.StrictMode>
   </ConfigProvider>,
