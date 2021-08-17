@@ -4,11 +4,11 @@ import {
 } from "react-router-dom"
 
         
-export default class Login extends React.Component {
+export default class NoaMatch extends React.Component {
   render() {
     return (
       <div>
-        登录页
+        404
         <Link to="/">去首页</Link>
       </div>
     );
