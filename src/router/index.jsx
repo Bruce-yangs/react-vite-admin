@@ -19,6 +19,9 @@ class Routers extends React.Component {
       <Router>
         {/* <App> */}
         <Switch>
+          <Route path='/' exact render={()=> (
+                <Redirect to='/login'/>
+          )}/>
           <Route path="/login" exact component={Login}></Route>
           {/* <Route path="/detail" component={Detail}></Route> */}
           <Route
@@ -27,7 +30,7 @@ class Routers extends React.Component {
             render={() => (
               <Home>
                 <Route path="/index" exact component={List}></Route>
-                <Route path="/index/detail" component={Detail}></Route>
+                <Route path="/index/detail/:id/:type" component={Detail}></Route>
               </Home>
             )}
           ></Route>

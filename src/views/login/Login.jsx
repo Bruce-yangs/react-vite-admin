@@ -9,7 +9,7 @@ export default class Login extends React.Component {
     return (
       <div>
         登录页
-        <Link to="/">去首页</Link>
+        <Link to="/index">去首页</Link>
       </div>
     );
   }
