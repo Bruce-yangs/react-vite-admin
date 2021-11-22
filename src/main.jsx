@@ -16,12 +16,12 @@ moment.locale('zh-cn');
 
 ReactDOM.render(
   <ConfigProvider locale={zhCN}>
-    <React.StrictMode>
+    {/* <React.StrictMode> */}
     {/* <Router routes={routes} > */}
       <Router />
       {/* <App /> */}
     {/* </Router> */}
-    </React.StrictMode>
+    {/* </React.StrictMode> */}
   </ConfigProvider>,
   document.getElementById("root")
 );
